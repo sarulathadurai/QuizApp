@@ -4,10 +4,10 @@ const NavBar = ({min,seconds,score}) => {
   return(
     <ul class="navbar navbar-light bg-dark">
   <li class="nav-item">
-    <a style={{color:"white"}} href="#"> SCORE: {score}</a>
+    <h3 style={{color:"white"}} > SCORE: {score}</h3>
   </li>
   <li class="nav-item">
-    <a style={{color:"white"}} href="#">{min}:{seconds<10 ? `0${seconds}`: seconds }</a>
+    <h3 style={{color:"white"}} >{min}:{seconds<10 ? `0${seconds}`: seconds }</h3>
   </li>
    </ul>
 

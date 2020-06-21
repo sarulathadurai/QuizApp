@@ -7,9 +7,6 @@ const Form = (props) => {
     const isChoice_1 = props.answer === c1 ? true:false;
     const isChoice_2 = props.answer === c2 ? true:false;
     const isChoice_3 = props.answer === c3 ? true:false;
-    const color = {
-        backgroundColor:'#078435'   
-    }
     return(
         <div key = {id} className="container">
             
