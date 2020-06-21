@@ -244,15 +244,17 @@ export const Questions = [
     },
     {
         id:20,
-        ques:`<script type="text/javascript">
-        var s = "9123456 or 80000?";
-        var pattern = /\d{4}/;
-        var output = s.match(pattern);
-        document.write(output);
-        </script>`,
-        c1:' 9123',
-        c2:' 91234',
-        c3:'80000',
+        ques:`var x = 0;
+        function foo() {
+            x++;
+            this.x = x;
+            return foo;
+        }
+        var bar = new new foo;
+        console.log(bar.x);`,
+        c1:' 0',
+        c2:'Rreference error',
+        c3:'undefined',
         ans:'9123'
     },
     {
